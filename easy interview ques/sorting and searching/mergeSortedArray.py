@@ -16,23 +16,18 @@ class Solution:
 
         i = 0
         j = 0
-        
+    
         while j < n and i < m:
-            if j < n:
-                print ("increment j")
-            if i < m:
-                print("incrememnt m")
+            
             if nums1[i] < nums2[j]:
                 i += 1
-                print("first case")
                 
-            elif nums2[j] >= nums1[i]:
+            elif nums2[j] <= nums1[i]:
                 nums1.insert(i, nums2[j] )
                 j += 1
-                print("second case")
+                i+=1
         if j < n:
             nums1[:] = nums1 + nums2[j:] 
-            print("here")
         return nums1    
 
 
