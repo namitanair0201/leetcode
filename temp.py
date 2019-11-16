@@ -1,3 +1,3 @@
-from m
-s = "2.78"
-print((s))
+for i in range(10,-1,-1):
+    print(i)
+print(i)
